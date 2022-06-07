@@ -16,7 +16,7 @@ pipeline {
         sh 'echo "I am on master node and my hostname is `hostname`"'
       }
     }
-
+    stage('Parallel stages") {
   
    parallel {
      stage('Node 1') {
@@ -47,5 +47,5 @@ echo "I am coming here from master node"'''
 
       }
     }
-
+          }
   }
