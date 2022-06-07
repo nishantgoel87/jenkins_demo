@@ -16,7 +16,7 @@ pipeline {
         sh 'echo "I am on master node and my hostname is `hostname`"'
       }
     }
-    stage('Parallel stages") {
+    stage('Parallel stages') {
   
    parallel {
      stage('Node 1') {
