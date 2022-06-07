@@ -1,10 +1,4 @@
 pipeline {
-  agent {
-    node {
-      label 'master'
-    }
-
-  }
   stages {
     stage('Master node') {
       agent {
@@ -18,7 +12,7 @@ pipeline {
       }
     }
 
-    stage('Node 1') {
+  
       parallel {
         stage('Node 1') {
           agent {
@@ -50,4 +44,3 @@ echo "I am coming here from master node"'''
     }
 
   }
-}
