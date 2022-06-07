@@ -18,8 +18,8 @@ pipeline {
     }
 
   
-      parallel {
-        stage('Node 1') {
+   parallel {
+     stage('Node 1') {
           agent {
             node {
               label 'node1'
