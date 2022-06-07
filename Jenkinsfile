@@ -7,6 +7,12 @@ pipeline {
   }
   stages {
     stage('Master node') {
+      agent {
+        node {
+          label 'master'
+        }
+
+      }
       steps {
         sh 'echo "I am on master node and my hostname is `hostname`"'
       }
